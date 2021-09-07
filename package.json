@@ -1,0 +1,20 @@
+{
+  "name": "sensemore-integration-stub",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node src/app.js",
+    "build": "rollup -c",
+    "release": "rollup -c && pkg --compress GZip -t node12-win-x64,node12-linux-x64  --out-path ./release ./dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "pkg": "^5.3.1"
+  }
+}
